@@ -1,0 +1,22 @@
+{
+    "translation": {
+        "appTitle": "ریسپی ریڈیئنس",
+        "placeholder": "ریسپی تلاش کریں...",
+        "noResults": "کوئی ریسپی نہیں ملی۔ کوئی اور تلاش کا لفظ آزمائیں۔",
+        "searchResults": "تلاش کے نتائج",
+        "loading": "لوڈ ہو رہا ہے...",
+        "homeFeed": "ہوم فیڈ",
+        "addRecipe": "ریسپی شامل کریں",
+        "userDashboard": "صارف ڈیش بورڈ",
+        "logout": "لاگ آؤٹ",
+        "login": "لاگ ان",
+        "signup": "سائن اپ",
+        "more": "مزید",
+        "about": "کے بارے میں",
+        "contact": "رابطہ",
+        "help": "مدد",
+        "footerapptagline": "2024 سے مزیدار ریسپیز بنا رہے ہیں",
+        "privacyPolicy": "پرائیویسی پالیسی"
+      }
+      
+}

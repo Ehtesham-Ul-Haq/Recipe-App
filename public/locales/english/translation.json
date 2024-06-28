@@ -1,0 +1,22 @@
+{
+    "translation": {
+      "appTitle": "Recipe Radiance",
+      "placeholder": "Search recipes...",
+      "noResults": "No recipes found. Try another search term.",
+      "searchResults": "Search Results",
+      "loading": "Loading...",
+      "homeFeed": "Home Feed",
+      "addRecipe": "Add Recipe",
+      "userDashboard": "User Dashboard",
+      "logout": "Logout",
+      "login": "Login",
+      "signup": "Signup",
+      "more": "More",
+      "about": "About",
+      "contact": "Contact",
+      "help": "Help",
+      "footerapptagline": "Creating delicious recipes since 2024",
+      "privacyPolicy": "Privacy Policy"
+    }
+  }
+  

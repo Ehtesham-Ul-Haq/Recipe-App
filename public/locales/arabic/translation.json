@@ -1,0 +1,23 @@
+{
+    "translation": {
+        "appTitle": "تألق الوصفات",
+        "placeholder": "ابحث عن وصفات...",
+        "noResults": "لم يتم العثور على وصفات. جرب مصطلح بحث آخر.",
+        "searchResults": "نتائج البحث",
+        "loading": "جار التحميل...",
+        "homeFeed": "التغذية الرئيسية",
+        "addRecipe": "أضف وصفة",
+        "userDashboard": "لوحة المستخدم",
+        "logout": "تسجيل الخروج",
+        "login": "تسجيل الدخول",
+        "signup": "اشترك",
+        "more": "المزيد",
+        "about": "حول",
+        "contact": "اتصل",
+        "help": "مساعدة",
+        "footerapptagline": "نحن نصنع وصفات لذيذة منذ عام 2024",
+        "privacyPolicy": "سياسة الخصوصية"
+      }
+      
+      
+}

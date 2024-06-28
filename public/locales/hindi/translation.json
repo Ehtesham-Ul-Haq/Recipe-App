@@ -1,0 +1,21 @@
+{
+"translation": {
+    "appTitle": "रेसिपी रेडियंस",
+    "placeholder": "रेसिपी खोजें...",
+    "noResults": "कोई रेसिपी नहीं मिली। कृपया कोई और खोज शब्द आजमाएं।",
+    "searchResults": "खोज परिणाम",
+    "loading": "लोड हो रहा है...",
+    "homeFeed": "होम फीड",
+    "addRecipe": "रेसिपी जोड़ें",
+    "userDashboard": "यूज़र डैशबोर्ड",
+    "logout": "लॉगआउट",
+    "login": "लॉगिन",
+    "signup": "साइन अप",
+    "more": "अधिक",
+    "about": "के बारे में",
+    "contact": "संपर्क",
+    "help": "मदद",
+    "footerapptagline": "2024 से स्वादिष्ट रेसिपी बना रहे हैं",
+    "privacyPolicy": "गोपनीयता नीति"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "translation": {
+  "appTitle": "Éclat de Recettes",
+  "placeholder": "Rechercher des recettes...",
+  "noResults": "Aucune recette trouvée. Essayez un autre terme de recherche.",
+  "searchResults": "Résultats de Recherche",
+  "loading": "Chargement...",
+  "homeFeed": "Flux Principal",
+  "addRecipe": "Ajouter une Recette",
+  "userDashboard": "Tableau de Bord Utilisateur",
+  "logout": "Déconnexion",
+  "login": "Connexion",
+  "signup": "S'inscrire",
+  "more": "Plus",
+  "about": "À Propos",
+  "contact": "Contact",
+  "help": "Aide",
+  "footerapptagline": "Création de délicieuses recettes depuis 2024",
+  "privacyPolicy": "Politique de Confidentialité"
+}
+}

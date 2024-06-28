@@ -1,0 +1,23 @@
+{
+    "translation": {
+        "appTitle": "Tarif Işıltısı",
+        "placeholder": "Tarifleri ara...",
+        "noResults": "Hiçbir tarif bulunamadı. Başka bir arama terimi deneyin.",
+        "searchResults": "Arama Sonuçları",
+        "loading": "Yükleniyor...",
+        "homeFeed": "Ana Akış",
+        "addRecipe": "Tarif Ekle",
+        "userDashboard": "Kullanıcı Paneli",
+        "logout": "Çıkış Yap",
+        "login": "Giriş Yap",
+        "signup": "Kayıt Ol",
+        "more": "Daha Fazla",
+        "about": "Hakkında",
+        "contact": "İletişim",
+        "help": "Yardım",
+        "footerapptagline": "2024'ten beri lezzetli tarifler yaratıyoruz",
+        "privacyPolicy": "Gizlilik Politikası"
+      }
+      
+      
+}

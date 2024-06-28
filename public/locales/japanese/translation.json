@@ -1,0 +1,21 @@
+{
+    "translation":{
+    "appTitle": "レシピの輝き",
+    "placeholder": "レシピを検索...",
+    "noResults": "レシピが見つかりませんでした。別の検索用語を試してください。",
+    "searchResults": "検索結果",
+    "loading": "読み込み中...",
+    "homeFeed": "ホームフィード",
+    "addRecipe": "レシピを追加",
+    "userDashboard": "ユーザーダッシュボード",
+    "logout": "ログアウト",
+    "login": "ログイン",
+    "signup": "サインアップ",
+    "more": "もっと",
+    "about": "約",
+    "contact": "コンタクト",
+    "help": "ヘルプ",
+    "footerapptagline": "2024年から美味しいレシピを作成",
+    "privacyPolicy": "プライバシーポリシー"
+  }
+}

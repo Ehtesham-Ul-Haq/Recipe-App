@@ -1,0 +1,22 @@
+{
+    "translation": {
+
+    "appTitle": "Resplandor de Recetas",
+    "placeholder": "Buscar recetas...",
+    "noResults": "No se encontraron recetas. Intenta con otro término de búsqueda.",
+    "searchResults": "Resultados de la Búsqueda",
+    "loading": "Cargando...",
+    "homeFeed": "Feed Principal",
+    "addRecipe": "Agregar Receta",
+    "userDashboard": "Panel de Usuario",
+    "logout": "Cerrar Sesión",
+    "login": "Iniciar Sesión",
+    "signup": "Registrarse",
+    "more": "Más",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "help": "Ayuda",
+    "footerapptagline": "Creando recetas deliciosas desde 2024",
+    "privacyPolicy": "Política de Privacidad"
+  }
+}

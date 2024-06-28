@@ -1,0 +1,21 @@
+{
+    "translation": {
+        "appTitle": "Rezept Glanz",
+        "placeholder": "Rezepte suchen...",
+        "noResults": "Keine Rezepte gefunden. Versuchen Sie einen anderen Suchbegriff.",
+        "searchResults": "Suchergebnisse",
+        "loading": "Wird geladen...",
+        "homeFeed": "Startseite",
+        "addRecipe": "Rezept hinzufügen",
+        "userDashboard": "Benutzer-Dashboard",
+        "logout": "Abmelden",
+        "login": "Anmelden",
+        "signup": "Registrieren",
+        "more": "Mehr",
+        "about": "Über",
+        "contact": "Kontakt",
+        "help": "Hilfe",
+        "footerapptagline": "Seit 2024 köstliche Rezepte kreieren",
+        "privacyPolicy": "Datenschutz-Bestimmungen"
+    }
+}
