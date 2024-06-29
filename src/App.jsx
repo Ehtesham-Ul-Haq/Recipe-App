@@ -21,10 +21,11 @@ import UpdateProfile from './components/UpdateProfile';
 import SearchResult from './components/SearchResult';
 import Alert from './components/Alert'; // Import the Alert component
 import { Tooltip } from 'react-tooltip';
-
+import { inject } from '@vercel/analytics';
 function App() {
   const { i18n } = useTranslation(); // Initialize useTranslation hook
-  
+  inject();
+
   const [recipes, setRecipes] = useState([]);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [currentUser, setCurrentUser] = useState(null);
@@ -87,7 +88,8 @@ function App() {
 
   return (
     <I18nextProvider i18n={i18n}> {/* Wrap your app with I18nextProvider */}
-    <div className="App">
+    <div className="App">    
+
       <Header isLoggedIn={isLoggedIn} onLogout={handleLogout} showAlert={showAlert} />
       <div className="container mx-auto">
 
