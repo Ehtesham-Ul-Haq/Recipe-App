@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://recipe-radiance-app.vercel.app/api'; // Replace with your actual backend URL
+const API_URL = 'mongodb+srv://ihtishamb7:Ahtasham22@reciperadiance.hiqtznk.mongodb.net/?retryWrites=true&w=majority&appName=reciperadiance'; // Replace with your actual backend URL
 
 // Set up axios instance
 const api = axios.create({
