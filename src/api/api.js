@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://recipe-radiance-app.vercel.app'; // Replace with your actual backend URL
+const API_URL = 'https://recipe-radiance-app.vercel.app/nCNyybkQyw0gvvgGwji2pKK0vFMv3q24bTtChtrfKgt00zh3cboBt7b7RdxYDLtU'; // Replace with your actual backend URL
 
 // Set up axios instance
 const api = axios.create({
