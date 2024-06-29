@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-const MONGODB_URI="mongodb://localhost:27017/recipe_app"
+const MONGODB_URI="mongodb+srv://ihtishamb7:Ahtasham22@reciperadiance.hiqtznk.mongodb.net/?retryWrites=true&w=majority&appName=reciperadiance" || "mongodb://localhost:27017/recipe_app"
 
 dotenv.config();
 
