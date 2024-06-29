@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { registerUser } from '../api/api';
 import { useNavigate, Link } from 'react-router-dom';
 
-function Signup({onLogin}) {
+function Signup({onLogin, showAlert}) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -17,6 +17,7 @@ function Signup({onLogin}) {
       navigate('/');
     } catch (error) {
       console.error('Error signing up:', error);
+      showAlert('success', 'Signup Failed');
     }
   };
 

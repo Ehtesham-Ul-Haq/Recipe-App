@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { loginUser } from '../api/api';
 import { useNavigate, Link } from 'react-router-dom';
 
-function Login({ onLogin }) {
+function Login({ onLogin, showAlert }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
@@ -17,6 +17,7 @@ function Login({ onLogin }) {
       navigate('/');
     } catch (error) {
       console.error('Error logging in:', error);
+      showAlert('success', 'Login Failed');
     }
   };
   return (
