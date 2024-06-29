@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route, useNavigate, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 import { I18nextProvider } from 'react-i18next'; // Import I18nextProvider
+import i18n from './i18n'; // Import i18n instance
 import Header from './components/Header';
 import RecipeList from './components/RecipeList';
 import RecipeForm from './components/RecipeForm';
