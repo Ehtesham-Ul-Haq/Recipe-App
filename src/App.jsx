@@ -21,10 +21,12 @@ import UpdateProfile from './components/UpdateProfile';
 import SearchResult from './components/SearchResult';
 import Alert from './components/Alert'; // Import the Alert component
 import { Tooltip } from 'react-tooltip';
-import { inject } from '@vercel/analytics';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/react"
+
+
 function App() {
   const { i18n } = useTranslation(); // Initialize useTranslation hook
-  inject();
 
   const [recipes, setRecipes] = useState([]);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -117,6 +119,8 @@ function App() {
       </div>
       <Tooltip id="my-tooltip" /> {/* Render ReactTooltip */}
       <Footer />
+      <SpeedInsights />
+      <Analytics />
     </div>
     </I18nextProvider>
   );
