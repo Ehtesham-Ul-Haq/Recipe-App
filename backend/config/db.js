@@ -1,10 +1,9 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-const MONGODB_URI="mongodb+srv://ihtishamb7:Ahtasham22@reciperadiance.hiqtznk.mongodb.net/?retryWrites=true&w=majority&appName=reciperadiance" || "mongodb://localhost:27017/recipe_app"
 
-dotenv.config();
+dotenv.config({ path: '.env.local' });
 
-console.log('MONGODB_URI:',MONGODB_URI); // Add this line to debug
+const MONGODB_URI= process.env.MONGODB_URI;
 
 
 const connectDB = async () => {

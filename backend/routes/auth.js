@@ -4,9 +4,10 @@ const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 const router = express.Router();
 const dotenv = require('dotenv');
-const JWT_SECRET="RecipeRadiance"
 
-dotenv.config();
+dotenv.config({ path: '.env.local' });
+
+const JWT_SECRET=process.env.JWT_SECRET
 
 // Register
 router.post('/register', async (req, res) => {

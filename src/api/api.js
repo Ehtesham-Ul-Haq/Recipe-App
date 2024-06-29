@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api'; // Replace with your actual backend URL
+const API_URL = 'https://recipe-radiance-app.vercel.app/api'; // Replace with your actual backend URL
 
 // Set up axios instance
 const api = axios.create({
@@ -44,7 +44,6 @@ export const getRecentlyViewedRecipes = (userId) => api.get(`/recipes/recently-v
 
 // Recipes
 export const getAllRecipes = (page, limit) => api.get(`/recipes/allrecipes?page=${page}&limit=${limit}`);
-// export const getAllRecipes = () => api.get('/recipes/allrecipes');
 export const getUserRecipes = (userId) => api.get(`/recipes/userrecipes/${userId}`);
 export const getRecipeById = (id) => api.get(`/recipes/${id}`);
 export const addRecipe = (recipe) => api.post('/recipes/addrecipe', recipe);

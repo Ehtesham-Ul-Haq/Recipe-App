@@ -1,8 +1,9 @@
 const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
-const JWT_SECRET="RecipeRadiance"
 
-dotenv.config();
+dotenv.config({ path: '.env.local' });
+
+const JWT_SECRET=process.env.JWT_SECRET
 
 module.exports = function (req, res, next) {
   const token = req.header('auth-token');

@@ -84,16 +84,6 @@ router.get('/userrecipes/:userId', async (req, res) => {
   }
 });
 
-// Get all recipes 
-// router.get('/allrecipes', async (req, res) => {
-//   try {
-//     const recipes = await Recipe.find().populate('user', ['name']);
-//     res.json(recipes);
-//   } catch (err) {
-//     console.error(err.message);
-//     res.status(500).send('Server error');
-//   }
-// });
 
 // Endpoint for getting all recipes with pagination, (social feed)
 router.get('/allrecipes', async (req, res) => {
