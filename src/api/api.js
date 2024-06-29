@@ -7,8 +7,6 @@ const api = axios.create({
   baseURL: API_URL,
 });
 
-console.log('api:', api);
-
 // Intercept requests to add token to headers
 api.interceptors.request.use(
   (config) => {
