@@ -1,11 +1,13 @@
 import axios from 'axios';
 
-const API_URL = 'mongodb+srv://ihtishamb7:Ahtasham22@reciperadiance.hiqtznk.mongodb.net/?retryWrites=true&w=majority&appName=reciperadiance'; // Replace with your actual backend URL
+const API_URL = import.meta.env.VITE_API_URL; // Replace with your actual backend URL
 
 // Set up axios instance
 const api = axios.create({
   baseURL: API_URL,
 });
+
+console.log('api:', api);
 
 // Intercept requests to add token to headers
 api.interceptors.request.use(
