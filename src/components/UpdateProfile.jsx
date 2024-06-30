@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { jwtDecode } from 'jwt-decode';
-import { getUserById, updateUser, getUserRecipes } from '../api/api';
-import { Link } from 'react-router-dom';
+import { getUserById, updateUser } from '../api/api';
 
-function UserProfile() {
+function UserProfile({ showAlert }) {
   const [user, setUser] = useState(null);
   const [editMode, setEditMode] = useState(false);
   const [formData, setFormData] = useState({
@@ -60,8 +59,10 @@ function UserProfile() {
         name: formData.name,
         email: formData.email,
       }));
+      showAlert('success', 'User details updated successfully')
     } catch (error) {
       console.error('Error updating user:', error);
+      showAlert('success', 'Failed to update user details')
     }
   };
 

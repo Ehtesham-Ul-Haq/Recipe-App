@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getRecipeById, deleteRecipe, saveFavoriteRecipe, updateRecentlyViewedRecipe } from '../api/api';
 import RecipeReview from './RecipeReview';
+import { FaSpinner } from 'react-icons/fa';
 
 
-function Recipe({ isLoggedIn, currentUser }) {
+function Recipe({ isLoggedIn, currentUser, showAlert }) {
   const { id } = useParams();
   const navigate = useNavigate();
   const [recipe, setRecipe] = useState(null);
@@ -28,14 +29,16 @@ function Recipe({ isLoggedIn, currentUser }) {
     fetchRecipe(id);
   }, [id, currentUser]);
 
-  if (!recipe) return <div>Loading...</div>;
+  if (!recipe) return <div><FaSpinner className="animate-spin text-4xl" /></div>;
 
   const handleDelete = async () => {
     try {
       await deleteRecipe(id);
       navigate('/recipelist'); // Redirect to the recipe list after deletion
+      showAlert('success', 'Recipe deleted Successfully');
     } catch (error) {
       console.error('Error deleting recipe:', error);
+      showAlert('error', 'Recipe failed to be deleted');
     }
   };
 
@@ -54,8 +57,10 @@ function Recipe({ isLoggedIn, currentUser }) {
       await saveFavoriteRecipe(currentUser.id, id);
       // Optionally, you can provide some feedback to the user, like a success message
       alert('Recipe saved as favorite successfully!');
+      showAlert('success', 'Recipe saved as favorite');
     } catch (error) {
       console.error('Error saving favorite recipe:', error);
+      showAlert('error', 'Failed to saved Recipe as favorite');
     }
   };
 

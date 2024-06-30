@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getRecipeById, updateRecipe } from '../api/api'; // Adjust the path to your API functions
 
-function UpdateRecipe() {
+function UpdateRecipe({ showAlert }) {
   const { id } = useParams();
   const navigate = useNavigate();
   const [recipe, setRecipe] = useState({
@@ -47,8 +47,10 @@ function UpdateRecipe() {
     try {
       await updateRecipe(id, recipe);
       navigate(`/recipe/${id}`);
+      showAlert('success', 'Recipe updated successfully')
     } catch (error) {
       console.error('Error updating recipe:', error);
+      showAlert('error', 'Recipe failed to updated')
     }
   };
 
