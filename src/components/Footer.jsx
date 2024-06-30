@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 function Footer() {
 
@@ -35,10 +36,10 @@ function Footer() {
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <ul className="flex space-x-6">
-              <li><a href="/about" className="hover:text-yellow-300">{t('translation.about')}</a></li>
-              <li><a href="/contact" className="hover:text-yellow-300">{t('translation.contact')}</a></li>
-              <li><a href="/help" className="hover:text-yellow-300">{t('translation.help')}</a></li>
-              <li><a href="/privacy" className="hover:text-yellow-300">{t('translation.privacyPolicy')}</a></li>
+              <li><Link to="/about" className="hover:text-yellow-300">{t('translation.about')}</Link></li>
+              <li><Link to="/contact" className="hover:text-yellow-300">{t('translation.contact')}</Link></li>
+              <li><Link to="/help" className="hover:text-yellow-300">{t('translation.help')}</Link></li>
+              <li><Link to="/privacy" className="hover:text-yellow-300">{t('translation.privacyPolicy')}</Link></li>
             </ul>
           </div>
           <div className="text-gray-400">&copy; 2024 Recipe Radiance. All rights reserved.</div>
