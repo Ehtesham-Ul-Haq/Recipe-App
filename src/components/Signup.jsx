@@ -17,7 +17,7 @@ function Signup({onLogin, showAlert}) {
       navigate('/');
     } catch (error) {
       console.error('Error signing up:', error);
-      showAlert('success', 'Signup Failed');
+      showAlert('error', 'Signup Failed');
     }
   };
 

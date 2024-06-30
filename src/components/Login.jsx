@@ -17,7 +17,7 @@ function Login({ onLogin, showAlert }) {
       navigate('/');
     } catch (error) {
       console.error('Error logging in:', error);
-      showAlert('success', 'Login Failed');
+      showAlert('error', 'Login Failed');
     }
   };
   return (
