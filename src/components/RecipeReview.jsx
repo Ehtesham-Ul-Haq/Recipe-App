@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { addReview, getReviews } from '../api/api';
 import StarRating from './StarRating'; // Assuming the StarRating component is in the same directory
+import { FaSpinner } from 'react-icons/fa';
 
-function RecipeReview({ recipeId, currentUser }) {
+function RecipeReview({ recipeId, currentUser, showAlert }) {
   const [reviews, setReviews] = useState([]);
   const [newReview, setNewReview] = useState('');
   const [rating, setRating] = useState(0);
@@ -25,7 +26,7 @@ function RecipeReview({ recipeId, currentUser }) {
 
   const handleAddReview = async () => {
     if (newReview.trim() === '' || rating === 0) {
-      alert('Please provide both a rating and a review.');
+      showAlert('warning','Please provide both a rating and a review');
       return;
     }
 
@@ -40,8 +41,10 @@ function RecipeReview({ recipeId, currentUser }) {
       setReviews([...reviews, review]);
       setNewReview('');
       setRating(0);
+      showAlert('success','Your review is added successfully');
     } catch (error) {
       console.error('Error adding review:', error);
+      showAlert('error','Failed to add your review');
     }
   };
 
@@ -63,7 +66,7 @@ function RecipeReview({ recipeId, currentUser }) {
     <div className="mt-8">
       <h3 className="text-2xl font-bold mb-4 border-b">Reviews</h3>
       {loading ? (
-        <div>Loading reviews...</div>
+        <div flex justify-center items-center><FaSpinner className="animate-spin text-4xl" /></div>
       ) : (
         <div className="space-y-4">
           {reviews.length > 0 ? (

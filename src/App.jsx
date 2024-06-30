@@ -61,7 +61,7 @@ function App() {
     localStorage.removeItem('token');
     localStorage.removeItem('currentUser');
     navigate('/login');
-    showAlert('info', 'Logged out successfully.');
+    showAlert('info', 'You are Logged out.');
 
   };
   
@@ -83,7 +83,7 @@ function App() {
 
     setTimeout(() => {
       setAlerts((alerts) => alerts.filter(alert => alert.id !== id));
-    }, 5000); // Alert duration
+    }, 3000); // Alert duration
   };
 
 
@@ -96,7 +96,7 @@ function App() {
       <div className="container mx-auto">
 
       {alerts.map(alert => (
-          <Alert key={alert.id} type={alert.type} message={alert.message} duration={5000} />
+          <Alert key={alert.id} type={alert.type} message={alert.message} duration={3000} />
         ))}
                 
         <Routes>

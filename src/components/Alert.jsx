@@ -5,7 +5,7 @@ import '../assets/Alert.css';
 
 const alertStyles = {
   success: 'bg-white border-green-700 text-green-700',
-  error:  'bg-whiteborder-red-700 text-red-700',
+  error:  'bg-white border-red-700 text-red-700',
   warning: 'bg-white border-yellow-700 text-yellow-700',
   info: 'bg-white border-blue-700 text-blue-700',
 };
@@ -24,7 +24,7 @@ const progressBarColors = {
   info: 'bg-blue-700',
 };
 
-function Alert({ type = 'info', message, duration = 5000 }) {
+function Alert({ type = 'info', message, duration = 3000 }) {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {

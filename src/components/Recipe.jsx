@@ -164,7 +164,7 @@ function Recipe({ isLoggedIn, currentUser, showAlert }) {
       </div>
 
       <div className="px-6 py-4">
-        <RecipeReview recipeId={id} currentUser={currentUser} />
+        <RecipeReview recipeId={id} currentUser={currentUser} showAlert={showAlert} />
       </div>
     </div>
   );
