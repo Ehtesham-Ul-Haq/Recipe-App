@@ -4,10 +4,10 @@ import { CSSTransition } from 'react-transition-group';
 import '../assets/Alert.css';
 
 const alertStyles = {
-  success: 'bg-white border-green-500 text-green-700',
-  error:  'bg-whiteborder-red-500 text-red-700',
-  warning: 'bg-white border-yellow-500 text-yellow-700',
-  info: 'bg-white border-blue-500 text-blue-700',
+  success: 'bg-white border-green-700 text-green-700',
+  error:  'bg-whiteborder-red-700 text-red-700',
+  warning: 'bg-white border-yellow-700 text-yellow-700',
+  info: 'bg-white border-blue-700 text-blue-700',
 };
 
 const iconStyles = {
@@ -15,6 +15,13 @@ const iconStyles = {
   error: <FaTimesCircle className="w-5 h-5 inline mr-2" />,
   warning: <FaExclamationCircle className="w-5 h-5 inline mr-2" />,
   info: <FaInfoCircle className="w-5 h-5 inline mr-2" />,
+};
+
+const progressBarColors = {
+  success: 'bg-green-700',
+  error: 'bg-red-700',
+  warning: 'bg-yellow-700',
+  info: 'bg-blue-700',
 };
 
 function Alert({ type = 'info', message, duration = 5000 }) {
@@ -40,8 +47,7 @@ function Alert({ type = 'info', message, duration = 5000 }) {
           {iconStyles[type]}
           <span>{message}</span>
         </div>
-        <div className="absolute bottom-0 left-0 h-1 bg-gray-400 progress-bar" style={{ animationDuration: `${duration}ms` }} />
-      </div>
+        <div className={`absolute bottom-0 left-0 h-1 ${progressBarColors[type]} progress-bar`} style={{ animationDuration: `${duration}ms` }} />      </div>
     </CSSTransition>
   );
 }
