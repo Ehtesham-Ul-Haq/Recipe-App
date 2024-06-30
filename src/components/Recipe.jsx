@@ -56,7 +56,6 @@ function Recipe({ isLoggedIn, currentUser, showAlert }) {
     try {
       await saveFavoriteRecipe(currentUser.id, id);
       // Optionally, you can provide some feedback to the user, like a success message
-      alert('Recipe saved as favorite successfully!');
       showAlert('success', 'Recipe saved as favorite');
     } catch (error) {
       console.error('Error saving favorite recipe:', error);
